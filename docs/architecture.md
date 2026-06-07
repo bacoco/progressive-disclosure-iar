@@ -2,6 +2,17 @@
 
 PDD-IAR has one job: investigate an existing PDD artifact set.
 
+## Repository Boundaries
+
+- [PDD](https://github.com/bacoco/progressive-disclosure-documentation) owns
+  artifact creation.
+- [PDG](https://github.com/bacoco/progressive-disclosure-guard) owns agent
+  guardrails.
+- PDD-IAR owns artifact-driven investigation.
+
+PDD-IAR must not scan repositories or generate PDD artifacts. It starts after
+PDD has produced `.pdd/`.
+
 ## Flow
 
 ```text
